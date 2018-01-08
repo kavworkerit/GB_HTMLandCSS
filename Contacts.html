@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <title>Регистрация</title>
 </head>
 
@@ -11,30 +12,46 @@
         <li><a href="index.html">Главная</a></li>
         <li><a href="Catalog.html">Каталог</a></li>
         <li><a href="#">Контакты</a></li>
-        <!-- <li><a href="Registration.html">Регистрация</a></li> -->
     </ul>
     <hr>
     <h1>Напишите нам</h1>
-    <fieldset>
-        <ul>
-            <li>Имя&#58;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="Ваше Имя" size="72"></li>
-            <li>Email&#58;&nbsp;<input type="text" placeholder="Адрес электронной почты" size="72"></li>
-            <li>Тема&#58;&nbsp;&nbsp;<input type="text" placeholder="Тема вашего письма" size="72"></li>
-            <li><textarea name="user_msg" id="1" cols="80" rows="10"></textarea></li>
-        </ul>
+    <form action="#">
+        <div class="contacts_form">
+            <Div class="field">
+                <label for="contact_name">Имя&#58</label>
+                <input id="contact_name" type="text" placeholder="Ваше Имя">
+            </Div>
+            <Div class="field">
+                <label for="contact_mail">Email&#58;</label>
+                <input id="contact_mail" type="text" placeholder="Адрес электронной почты">
+            </Div>
+            <Div class="field">
+                <label for="contact_theme">Тема&#58</label>
+                <input id="contact_theme" type="text" placeholder="Тема вашего письма">
+            </Div>
+        </div>
+        <hr style="color: #f8f8f8">
+        <div>
+            <textarea id="contact_msg" name="user_msg" placeholder="Текст сообщения" cols="50"></textarea>
+        </div>
         <input type="submit" value="OK">&nbsp;<input type="reset" value="Отмена">
-    </fieldset>
+        <br>
+    </form>
     <hr>
-    <h2>Адрес</h2>
-    <ul class="contacts_mail">
-        <li>Отдел продаж&#58;&nbsp;<b>DG.Stor.sales&#64;mail.ru</b> <br></li>
-        <li>Отдел логистики&#58;&nbsp;<b>DG.Stor.trans&#64;mail.ru</b> <br></li>
-        <li>Техническая потдержка сайта&#58;&nbsp;<b>DG.Stor.it&#64;mail.ru</b> <br></li>
-        <li>Контактный номер телефона интернет-магазина&#58;&nbsp;<b>+7 999 999 99 99</b></li>
-        <li>Наш офис можно найти&#58;&nbsp;<br>
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0a36c83766585cf8e4972cbf37d8065782c093a81766bdd494cf6ec3407a90f1&amp;source=constructor" width="361" height="240" frameborder="0"></iframe>
-        </li>
-    </ul>
+    <p> name : < input type=text /> </p>
+    
+    <div class="contacts_address_list">
+        <h2>Адрес</h2>
+        <ul>
+            <li>Отдел продаж&#58;&nbsp;<b>DG.Stor.sales&#64;mail.ru</b> <br></li>
+            <li>Отдел логистики&#58;&nbsp;<b>DG.Stor.trans&#64;mail.ru</b> <br></li>
+            <li>Техническая потдержка сайта&#58;&nbsp;<b>DG.Stor.it&#64;mail.ru</b> <br></li>
+            <li>Контактный номер телефона интернет-магазина&#58;&nbsp;<b>+7 999 999 99 99</b></li>
+            <li>Наш офис можно найти&#58;&nbsp;<br>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0a36c83766585cf8e4972cbf37d8065782c093a81766bdd494cf6ec3407a90f1&amp;source=constructor" width="100%" height="240" frameborder=""></iframe>
+            </li>
+        </ul>
+    </div>
 </body>
 <!-- Нижняя часть страницы -->
 <footer>

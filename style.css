@@ -1,0 +1,82 @@
+body {
+    background-color: #f8f8f8;
+}
+
+H3{
+    color: blueviolet;
+    font-size: 25px
+}
+
+p{
+    font-size: 16px;
+}
+
+.menu li {
+    font-style: italic;
+    font-size: 1.3em;
+    list-style-type: none;
+    padding-left: 2.5em;
+    background: url(menu/strelka-animatsionnaya-kartinka-0494.gif);
+    background-size: 2.3em 70%;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: auto
+}
+.menu li a {
+color: #8B00FF;
+}
+hr{
+    width: 100%;    
+}
+
+.contacts_form{
+    float:left;
+}
+.contacts_form div{
+    clear:both;
+    text-align:left;
+}
+.contacts_form div label{
+    float:left;
+    width: 3em
+}
+#contact_theme{
+    width: 50em
+}
+#contact_msg{
+    width: 53.5em;
+    height: 10em;
+}
+
+.contacts_address_list li{
+    list-style-type: none;
+}
+
+#main_shop_name{
+    color: brown;
+    font-size: 40px
+}
+
+img[alt="hdd"]{
+    border: 2px solid brown;
+}
+
+.p_atention{
+    color: coral;
+    font-size: 20px;
+    font-style: oblique
+        
+}
+.p_welcome {
+    color: cadetblue;
+    font-size: 20px;
+    text-align: center
+}
+
+p {
+  text-align:left;
+}
+
+p input {
+  float:right;
+}
