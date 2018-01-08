@@ -1,82 +1,147 @@
+/*
+1. Создать файл style.css, в котором будут храниться все стили вашей работы.
+2. В качестве фона на всех страницах установить цвет #f8f8f8.
+*/
 body {
     background-color: #f8f8f8;
 }
-
-H3{
-    color: blueviolet;
-    font-size: 25px
+/*
+3. Меню сайта:
+    a. Для всех ссылок меню задать определённый стиль.(Цвет текста, размер шрифта, начертание шрифта и т.д.)
+    b. Убрать маркеры списка.
+*/
+.menu li a {
+    color: #8B00FF;
 }
-
-p{
-    font-size: 16px;
-}
-
 .menu li {
+    color: blueviolet;
     font-style: italic;
     font-size: 1.3em;
     list-style-type: none;
+    /* От себя: Внедрил маштабируемую gif анимацию ввиде стрелочки */
     padding-left: 2.5em;
     background: url(menu/strelka-animatsionnaya-kartinka-0494.gif);
     background-size: 2.3em 70%;
     background-repeat: no-repeat;
     height: 40px;
-    width: auto
+    width: auto;
 }
-.menu li a {
-color: #8B00FF;
+/*
+4. Страница “Подробное описание товара”
+    a. Заголовки (Краткое описание товара, Характеристики, Подробное описание товара)
+*/
+.cat_item_header{
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
 }
-hr{
-    width: 100%;    
+/*
+    b. Для текста краткого описания товар.
+*/
+.cat_item_short_descr{
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
 }
-
-.contacts_form{
-    float:left;
+/*
+    c. Для текста подробного описания товара:
+*/
+.cat_item_full_descr{
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
 }
-.contacts_form div{
-    clear:both;
-    text-align:left;
+/*
+    d. Для списка внурти подраздела Характеристики товара
+*/
+.cat_item_full_descr ul li{
+    list-style-type: none;
+    color: coral;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 0.9em;
+    text-align: left;
+    padding-left: 1em;
+    background: url(Catalog/images/124.gif);
+    background-size: 0.8em 0.8em;
+    background-repeat: no-repeat;
+    height: 1.5em;
+    width: auto;
 }
-.contacts_form div label{
-    float:left;
-    width: 3em
-}
-#contact_theme{
-    width: 50em
-}
-#contact_msg{
-    width: 53.5em;
+/*
+5. Странице “Контакты”:
+    a. Задать значения ширины и высоты для полей ввода
+    b. Задать стили для текста, внутри полей input. ( Цвет текста, размер шрифта и т.д.).
+    c. Следите за тем, чтобы на странице всё выглядело гармонично, не выбирайте слишком резких цветов.
+*/
+#contact_msg {
+    width: 100%;
     height: 10em;
+    text-align: left;
+    font-weight: 200;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: darkviolet
 }
-
-.contacts_address_list li{
+div.field label {
+    text-align: right;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: brown;
+    display: table-cell;
+}
+div.field input {
+    width: 50em;
+    height: 2em;
+    text-align: left;
+    font-weight: 200;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: darkviolet;
+    display: table-cell;
+}
+div.field {
+    display: table-row;
+}
+.contacts_address_list li {
     list-style-type: none;
 }
-
-#main_shop_name{
-    color: brown;
-    font-size: 40px
+/*
+6. *Для изображений, размещенных на странице подробного описания товара, задать рамку произвольным цветом.
+*/
+img[alt="hdd"] {
+    border: 4px solid gray;
 }
-
-img[alt="hdd"]{
-    border: 2px solid brown;
-}
-
-.p_atention{
+/*
+7. *Приветствуются самостоятельные дополнения ваших работ в пределах пройденной темы
+    От себя дополнительное оформление
+*/
+.p_atention {
     color: coral;
     font-size: 20px;
     font-style: oblique
-        
 }
 .p_welcome {
     color: cadetblue;
     font-size: 20px;
     text-align: center
 }
-
-p {
-  text-align:left;
+H3 {
+    color: blueviolet;
+    font-size: 25px
 }
-
-p input {
-  float:right;
+p {
+    font-size: 16px;
+}
+hr {
+    width: 100%;
+    clear: both;
+}
+#main_shop_name {
+    color: brown;
+    font-size: 40px
 }
