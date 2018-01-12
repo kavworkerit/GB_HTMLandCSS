@@ -13,18 +13,20 @@ body {
 .menu li a {
     color: #8B00FF;
 }
+
 .menu li {
     color: blueviolet;
     font-style: italic;
     font-size: 1.3em;
     list-style-type: none;
-    /* От себя: Внедрил маштабируемую gif анимацию ввиде стрелочки */
     padding-left: 2.5em;
-    background: url(menu/strelka-animatsionnaya-kartinka-0494.gif);
-    background-size: 2.3em 70%;
-    background-repeat: no-repeat;
-    height: 40px;
-    width: auto;
+    border-bottom-left-radius: 1em;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-top: 0.2em;
+    height: 35px;
+    width: 6em;
 }
 /*
 4. Страница “Подробное описание товара”
@@ -35,6 +37,7 @@ body {
     font-size: 18px;
     font-weight: 400;
     background-color: #eaeaea;
+    text-align: center;
 }
 /*
     b. Для текста краткого описания товар.
@@ -48,17 +51,17 @@ body {
 /*
     c. Для текста подробного описания товара:
 */
-.cat_item_full_descr{
+.cat_item_full_descr_table {
     color: #484343;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
+    font-size: 1em;
     text-align: left;
+    font-size: 16px;
 }
 /*
     d. Для списка внурти подраздела Характеристики товара
 */
-.cat_item_full_descr ul li{
+/*
+.cat_item_full_descr{
     list-style-type: none;
     color: coral;
     font-size: 16px;
@@ -72,21 +75,13 @@ body {
     height: 1.5em;
     width: auto;
 }
+*/
 /*
 5. Странице “Контакты”:
     a. Задать значения ширины и высоты для полей ввода
     b. Задать стили для текста, внутри полей input. ( Цвет текста, размер шрифта и т.д.).
     c. Следите за тем, чтобы на странице всё выглядело гармонично, не выбирайте слишком резких цветов.
 */
-#contact_msg {
-    width: 100%;
-    height: 10em;
-    text-align: left;
-    font-weight: 200;
-    font-family: sans-serif;
-    font-size: 14px;
-    color: darkviolet
-}
 div.field label {
     text-align: right;
     font-weight: 600;
@@ -96,26 +91,54 @@ div.field label {
 }
 div.field input {
     width: 50em;
-    height: 2em;
+    height: 1.5em;
     text-align: left;
     font-weight: 200;
     font-family: sans-serif;
     font-size: 14px;
-    color: darkviolet;
     display: table-cell;
+    color: darkblue;
+    border-radius: 10px;
+    padding: 5px;
 }
 div.field {
     display: table-row;
 }
+#contact_msg {
+    width: 100%;
+    height: 10em;
+    text-align: left;
+    font-weight: 200;
+    font-family: sans-serif;
+    font-size: 14px;
+    display: table-row;
+    color: darkblue;
+    border-radius: 10px;
+    padding: 5px;
+}
 .contacts_address_list li {
     list-style-type: none;
+}
+INPUT[type="submit"] {
+    width: 100PX;
+    height: 30px;
+    border-radius: 10px;
+    background-color: mediumaquamarine;
+}
+INPUT[type="reset"] {
+    width: 100PX;
+    height: 30px;
+    border-radius: 10px;
+    background-color: beige;
 }
 /*
 6. *Для изображений, размещенных на странице подробного описания товара, задать рамку произвольным цветом.
 */
+/*
 img[alt="hdd"] {
     border: 4px solid gray;
 }
+*/
 /*
 7. *Приветствуются самостоятельные дополнения ваших работ в пределах пройденной темы
     От себя дополнительное оформление
@@ -123,25 +146,177 @@ img[alt="hdd"] {
 .p_atention {
     color: coral;
     font-size: 20px;
-    font-style: oblique
+    font-style: oblique;
 }
 .p_welcome {
     color: cadetblue;
     font-size: 20px;
-    text-align: center
+    text-align: center;
 }
 H3 {
     color: blueviolet;
-    font-size: 25px
+    font-size: 25px;
 }
-p {
-    font-size: 16px;
-}
+
 hr {
     width: 100%;
     clear: both;
 }
 #main_shop_name {
     color: brown;
-    font-size: 40px
+    font-size: 40px;
+}
+
+/*
+По заданию 4
+*/
+/*
+1.При наведении на меню сайта цвет ссылок должен меняться на произвольный.
+*/
+.menu li a:hover{
+    color: darkorange;
+}
+/*
+2.На всех страницах создать блок с классом “header”, содержащий:
+* логотип вашего интернет магазина;
+* Меню сайта.
+*/
+.header {
+    background: url(menu/logo.png);
+    background-size:contain ;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.menu li:hover {
+    background: url(menu/strelka-animatsionnaya-kartinka-0494.gif);
+    background-size: 2.3em 70%;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-color: azure;
+}
+/*
+    Форматирование таблицы подробных характеристик товара
+*/
+.cat_item_table{
+    border: 2px;
+    border-style: solid;
+    border-collapse: collapse;
+    border-color: darkgrey;
+}
+.cat_item_table TD {
+    border: 2px;
+    border-style: solid;
+    border-collapse: collapse;
+    border-color: darkgrey;
+    padding: 0.3em;
+}
+.cat_item_full_descr_table{
+    border-collapse: collapse; 
+}
+.cat_item_full_descr_table p{
+    font-size: 16px;
+    font-style: italic;
+}
+/*
+Оформления списка каталога
+*/
+.catalog {
+    border-collapse: collapse;
+    text-align: left;
+}
+.catalog TD {
+    border-top-style: solid;
+    border-top-width:thin;
+    border-color: darkgray;
+    border-bottom-style: solid;
+    border-bottom-width:thin;
+    padding: 0.5em;
+}
+/*
+    Убираем верхнюю границу первой строки
+*/
+.catalog TR:first-child TD {
+    border-top-style: none;
+}
+/*
+    Убираем нижнюю границу последней строки
+*/
+.catalog TR:last-child TD {
+    border-bottom-style: none;
+}
+/*
+    Подсветка строки в списке каталога, когжда наведен курсор
+*/
+.catalog TR:hover {
+    background-color: azure;
+    color: coral;
+}
+.catalog TR:hover TD:nth-of-type(3):first-letter {
+    color: blue;
+}
+/*
+8.На странице просмотра товара каталога, в каждом параграфе сделать первую букву первого слова другим шрифтом и размером.
+*/
+.catalog TD:nth-of-type(3):first-letter {
+    color: coral;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+/*
+4.При вводе текста в поле “Email” на странице контактной информации поменять цвет текста и цвет поля. 
+*/
+#contact_mail:focus {
+    color: darkblue;
+}
+#contact_mail:focus {
+    color: darkviolet;
+    background-color: bisque;
+}
+/*
+5.При вводе текста в текстовые поля каждое слово должно начинаться с большой буквы, даже если пользователь будет вводить с маленькой буквы.
+*/
+div.field input {
+    text-transform: capitalize; 
+}
+/*
+7.При наведении на изображения в разделе просмотра товара, подробного описания, необходимо сделать так, чтобы рамка исчезала, но сама картинка при этом не должна смещаться, т.е должна оставаться неподвижной. 
+*/
+.cat_item_image {
+    outline-width: 3px;
+    outline-color: coral;
+    outline-style:none;
+}
+.cat_item_image:hover {
+    outline-width: 3px;
+    outline-color: coral;
+    outline-style:solid;
+}
+/*
+8.На странице просмотра товара каталога, в каждом параграфе сделать первую букву первого слова другим шрифтом и размером.
+*/
+.cat_item_full_descr_table TR:nth-child(n+2) TD:nth-child(1):first-letter {
+    font-size: 1.1em;
+    font-style: italic;
+    color: coral;
+    font-weight: 600;
+}
+/*
+    Подсветка строки в таблице подробных характеристик при наведении курсора
+*/
+.cat_item_full_descr_table TR:nth-of-type(n+3) TD:nth-child(1):hover:first-letter {
+    color: Blue;
+}
+.cat_item_full_descr_table TR:nth-of-type(n+3):hover {
+    background-color: azure;
+    color: coral;
+}
+/*
+11.*Задать высоту для верхней строки таблицы, отличную от всех остальных.
+*/
+.cat_item_table TH{
+    height: 3em;
+    border: 2px;
+    border-style: solid;
+    border-collapse: collapse;    
+    border-color: darkgrey;
 }

@@ -9,59 +9,138 @@
 </head>
 
 <body>
-    <ul class="menu">
-        <li><a href="../index.html">Главная</a></li>
-        <li><a href="../Catalog.html">Каталог</a></li>
-        <li><a href="../Contacts.html">Контакты</a></li>
-        <!-- <li><a href="../Registration.html">Регистрация</a></li> -->
-    </ul>
+    <div class="header">
+        <ul class="menu">
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="../Catalog.html">Каталог</a></li>
+            <li><a href="../Contacts.html">Контакты</a></li>
+            <!-- <li><a href="../Registration.html">Регистрация</a></li> -->
+        </ul>
+    </div>
     <hr>
     <div>
-        <TABLE border="1" align="center">
-            <TH colspan=3>Название&nbsp;товара</TH>
-            <TH class="cat_item_header" colspan=1>Описание&nbsp;товара</TH>
-            <TH class="cat_item_header" colspan=1>Характеристики&nbsp;товара</TH>
-            <TH colspan=1>Цена&nbsp;товара</TH>
+        <TABLE class="cat_item_table" align="center">
             <TR>
-                <td> <a href="images/hdd_0.jpg" target="_blank"><img src="images/hdd_0.jpg" alt="hdd" width="70" height="70"></a>
+                <TH colspan=3>Название&nbsp;товара</TH>
+                <TH class="cat_item_header" colspan=1>Описание&nbsp;товара</TH>
+                <TH class="cat_item_header" colspan=1>Характеристики&nbsp;товара</TH>
+                <TH colspan=1>Цена&nbsp;товара</TH>
+            </TR>
+            <TR>
+                <td> <a href="images/hdd_0.jpg" target="_blank">
+                <img class="cat_item_image" src="images/hdd_0.jpg" alt="hdd"  width="70" height="70"></a>
                 </td>
                 <TD colspan=2>HDD WD&nbsp;Caviar&nbsp;Black 500&nbsp;GB</TD>
                 <TD>жесткий&nbsp;диск для настольного компьютера</TD>
-                <TD class="cat_item_short_descr" >объем 500&nbsp;Гб <br>форм-фактор 3.5&quot; <br>интерфейс SATA&nbsp;6Gb/s</TD>
+                <TD class="cat_item_short_descr">объем 500&nbsp;Гб <br>форм-фактор 3.5&quot; <br>интерфейс SATA&nbsp;6Gb/s</TD>
                 <TD ALIGN="center" width="80"><b>4&nbsp;190&nbsp;руб.</b></TD>
             </TR>
+        </TABLE>
+        <TABLE class="cat_item_full_descr_table" align="center">
             <TR>
-                <TH class="cat_item_header" colspan=6>Подробное описание товара</TH>
-                <TR>
-                    <TD class="cat_item_full_descr" colspan=6>
-                       Для данной серии накопителей характерны скорость и надежность работы, подходит для настольных систем.
-                        <ul>
-                            <li>Форм-фактор 3.5&quot;</li>
-                            <li>Объем 500&nbsp;Гб</li>
-                            <li>Объем буферной памяти 64&nbsp;Мб</li>
-                            <li>Скорость вращения 7200&nbsp;rpm</li>
-                            <li>Интерфейс Подключение SATA&nbsp;6Gbit/s</li>
-                            <li>Внешняя скорость передачи данных 600&nbsp;Мб/с</li>
-                            <li>Среднее время задержки (Latency) 4.2&nbsp;мс</li>
-                            <li>Ударостойкость при работе 30&nbsp;G</li>
-                            <li>Ударостойкость при хранении 350&nbsp;G</li>
-                            <li>Уровень шума простоя 29&nbsp;дБ</li>
-                            <li>Уровень шума работы 30&nbsp;дБ</li>
-                            <li>Потребляемая мощность 6.80&nbsp;Вт</li>
-                            <li>Размеры (ШхВхД) 101.6&times;25.4&times;147мм</li>
-                            <li>Вес 440&nbsp;г</li>
-                        </ul>
-                    </TD>
-                </TR>
+                <TH class="cat_item_header" colspan=2>Подробное описание товара</TH>
+            </TR>
+            <TR>
+                <TD colspan=2>
+                    <p>
+                        Для данной серии накопителей характерны скорость и надежность работы, подходит для настольных систем.
+                    </p>
+                </TD>
+            </TR>
+            <TR>
+                <TD>
+                    Форм-фактор
+                </TD>
+                <TD>3.5&quot;</TD>
+            </TR>
+            <TR>
+                <TD>
+                    Объем
+                </TD>
+                <TD>500&nbsp;Гб</TD>
+            </TR>
+            <TR>
+                <TD>
+                    Объем буферной памяти
+                </TD>
+                <TD>64&nbsp;Мб</TD>
+            </TR>
+            <TR>
+                <TD>
+                    Скорость вращения
+                </TD>
+                <TD>7200&nbsp;rpm</TD>
+            </TR>
+            <TR>
+                <TD>
+                    Интерфейс Подключение
+                </TD>
+                <TD>SATA&nbsp;6Gbit/s</TD>
+            </TR>
+            <TR>
+                <TD>
+                    Внешняя скорость передачи данных
+                </TD>
+                <TD>600&nbsp;Мб/с</TD>
+            </TR>
+            <TR>
+                <TD>
+                    Среднее время задержки (Latency)
+                </TD>
+                <TD>4.2&nbsp;мс</TD>
+            </TR>
+            <TR>
+                <TD>
+                    Ударостойкость при работе
+                </TD>
+                <TD>30&nbsp;G</TD>
+            </TR>
+            <TR>
+                <TD>
+                    Ударостойкость при хранении
+                </TD>
+                <TD>350&nbsp;G</TD>
+            </TR>
+            <TR>
+                <TD>
+                    Уровень шума простоя
+                </TD>
+                <TD>29&nbsp;дБ</TD>
+            </TR>
+            <TR>
+                <TD>
+                    Уровень шума работы
+                </TD>
+                <TD>30&nbsp;дБ</TD>
+            </TR>
+            <TR>
+                <TD>
+                    Потребляемая мощность
+                </TD>
+                <TD>6.80&nbsp;Вт</TD>
+            </TR>
+            <TR>
+                <TD>
+                    Размеры (ШхВхД)
+                </TD>
+                <TD>101.6&times;25.4&times;147мм
+                </TD>
+            </TR>
+            <TR>
+                <TD>
+                    Вес
+                </TD>
+                <TD>440&nbsp;г</TD>
             </TR>
         </TABLE>
     </div>
+
+    <!-- Нижняя часть страницы -->
+    <div class="footer">
+        <hr>
+        <a href="http://geekbrains.ru" target="_blank">Портал GeekBrains</a><br>
+        <sub>Все права защищены &copy;&nbsp;2017</sub>
+    </div>
 </body>
-<!-- Нижняя часть страницы -->
-<footer>
-    <hr>
-    <a href="http://geekbrains.ru" target="_blank">Портал GeekBrains</a><br>
-    <sub>Все права защищены &copy;&nbsp;2017</sub>
-</footer>
 
 </html>

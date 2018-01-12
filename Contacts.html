@@ -8,33 +8,34 @@
 </head>
 
 <body>
-    <ul class="menu">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="Catalog.html">Каталог</a></li>
-        <li><a href="#">Контакты</a></li>
-    </ul>
+    <div class="header">
+        <ul class="menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="Catalog.html">Каталог</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </div>
     <hr>
     <h1>Напишите нам</h1>
-    <form action="#">
-        <div class="contacts_form">
+    <form class="contacts_form" action="#">
+        <fieldset>
             <Div class="field">
                 <label for="contact_name">Имя&#58</label>
                 <input id="contact_name" type="text" placeholder="Ваше Имя">
             </Div>
             <Div class="field">
                 <label for="contact_mail">Email&#58;</label>
-                <input id="contact_mail" type="text" placeholder="Адрес электронной почты">
+                <input id="contact_mail" type="email" placeholder="Адрес электронной почты">
             </Div>
             <Div class="field">
                 <label for="contact_theme">Тема&#58</label>
                 <input id="contact_theme" type="text" placeholder="Тема вашего письма">
             </Div>
-        </div>
-        <div>
-            <textarea id="contact_msg" name="user_msg" placeholder="Текст сообщения" cols="50"></textarea>
-        </div>
-        <input type="submit" value="OK">&nbsp;<input type="reset" value="Отмена">
-        <br>
+            <div>
+                <textarea id="contact_msg" placeholder="Текст сообщения" cols="50"></textarea>
+            </div>
+            <input type="submit" value="OK">&nbsp;<input type="reset" value="Отмена">
+        </fieldset>
     </form>
     <hr>
     <div class="contacts_address_list">
@@ -49,12 +50,13 @@
             </li>
         </ul>
     </div>
+
+    <!-- Нижняя часть страницы -->
+    <div class="footer">
+        <hr>
+        <a href="http://geekbrains.ru" target="_blank">Портал GeekBrains</a><br>
+        <sub>Все права защищены &copy;&nbsp;2017</sub>
+    </div>
 </body>
-<!-- Нижняя часть страницы -->
-<footer>
-    <hr>
-    <a href="http://geekbrains.ru" target="_blank">Портал GeekBrains</a><br>
-    <sub>Все права защищены &copy;&nbsp;2017</sub>
-</footer>
 
 </html>
