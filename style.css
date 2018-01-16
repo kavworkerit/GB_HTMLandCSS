@@ -2,19 +2,62 @@
 1. Создать файл style.css, в котором будут храниться все стили вашей работы.
 2. В качестве фона на всех страницах установить цвет #f8f8f8.
 */
+
 body {
     background-color: #f8f8f8;
 }
+
 /*
 3. Меню сайта:
     a. Для всех ссылок меню задать определённый стиль.(Цвет текста, размер шрифта, начертание шрифта и т.д.)
     b. Убрать маркеры списка.
 */
-.menu li a {
-    color: #8B00FF;
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+.header{
+    height: 100px;
+    width:  100%;
+    background-image: url(bkheader.gif)
+}
+.logo {
+    display: inline-block;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    background-image: url(menu/logo.png);
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
 }
 
+.menu{
+    text-align: right;
+    margin: 0.2em;
+    float: right
+}
+
+.menu li a {
+    color: #8B00FF;
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding-right: 2.5em;
+}
 .menu li {
+    position: relative;
+    display: inline-block;
     color: blueviolet;
     font-style: italic;
     font-size: 1.3em;
@@ -24,42 +67,59 @@ body {
     border-top-right-radius: 1em;
     border-top-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    padding-top: 0.2em;
     height: 35px;
-    width: 6em;
+    width: 5em;
+    text-align: left;
+}
+
+.footer{
+    clear: both;
+    text-align: right;
+    padding-right: 50px;
+    padding-top: 50px;
+    height: 100px;
+    margin: 0 auto;
+    background-color:aliceblue
 }
 /*
 4. Страница “Подробное описание товара”
     a. Заголовки (Краткое описание товара, Характеристики, Подробное описание товара)
 */
-.cat_item_header{
+
+.cat_item_header {
     color: black;
     font-size: 18px;
     font-weight: 400;
     background-color: #eaeaea;
     text-align: center;
 }
+
 /*
     b. Для текста краткого описания товар.
 */
-.cat_item_short_descr{
+
+.cat_item_short_descr {
     color: #707070;
     font-size: 14px;
     font-style: italic;
     line-height: 16px;
 }
+
 /*
     c. Для текста подробного описания товара:
 */
+
 .cat_item_full_descr_table {
     color: #484343;
     font-size: 1em;
     text-align: left;
     font-size: 16px;
 }
+
 /*
     d. Для списка внурти подраздела Характеристики товара
 */
+
 /*
 .cat_item_full_descr{
     list-style-type: none;
@@ -76,19 +136,27 @@ body {
     width: auto;
 }
 */
+
 /*
 5. Странице “Контакты”:
     a. Задать значения ширины и высоты для полей ввода
     b. Задать стили для текста, внутри полей input. ( Цвет текста, размер шрифта и т.д.).
     c. Следите за тем, чтобы на странице всё выглядело гармонично, не выбирайте слишком резких цветов.
 */
+
+div.field {
+    display: table-row;
+}
+
 div.field label {
-    text-align: right;
+    text-align: left;
     font-weight: 600;
     font-family: sans-serif;
     color: brown;
     display: table-cell;
+    width: 4em
 }
+
 div.field input {
     width: 50em;
     height: 1.5em;
@@ -101,58 +169,69 @@ div.field input {
     border-radius: 10px;
     padding: 5px;
 }
-div.field {
-    display: table-row;
-}
+
 #contact_msg {
-    width: 100%;
+    width: 54em;
     height: 10em;
+    display: block;
     text-align: left;
     font-weight: 200;
     font-family: sans-serif;
     font-size: 14px;
-    display: table-row;
     color: darkblue;
     border-radius: 10px;
-    padding: 5px;
+    padding: 10px;
 }
+
 .contacts_address_list li {
     list-style-type: none;
 }
+.contacts_address_list  iframe {
+    height: 374px;
+    width: 100%;
+}
+
 INPUT[type="submit"] {
     width: 100PX;
     height: 30px;
     border-radius: 10px;
     background-color: mediumaquamarine;
 }
+
 INPUT[type="reset"] {
     width: 100PX;
     height: 30px;
     border-radius: 10px;
     background-color: beige;
 }
+
 /*
 6. *Для изображений, размещенных на странице подробного описания товара, задать рамку произвольным цветом.
 */
+
 /*
 img[alt="hdd"] {
     border: 4px solid gray;
 }
 */
+
 /*
 7. *Приветствуются самостоятельные дополнения ваших работ в пределах пройденной темы
     От себя дополнительное оформление
 */
+
 .p_atention {
     color: coral;
     font-size: 20px;
     font-style: oblique;
 }
+
 .p_welcome {
     color: cadetblue;
     font-size: 20px;
     text-align: center;
 }
+
 H3 {
     color: blueviolet;
     font-size: 25px;
@@ -162,6 +241,7 @@ hr {
     width: 100%;
     clear: both;
 }
+
 #main_shop_name {
     color: brown;
     font-size: 40px;
@@ -170,23 +250,24 @@ hr {
 /*
 По заданию 4
 */
+
 /*
 1.При наведении на меню сайта цвет ссылок должен меняться на произвольный.
 */
-.menu li a:hover{
+.menu li a {
+    display: block;
+    width: 100%;
+}
+.menu li a:hover {
     color: darkorange;
 }
+
 /*
 2.На всех страницах создать блок с классом “header”, содержащий:
 * логотип вашего интернет магазина;
 * Меню сайта.
 */
-.header {
-    background: url(menu/logo.png);
-    background-size:contain ;
-    background-repeat: no-repeat;
-    background-position: right;
-}
+
 .menu li:hover {
     background: url(menu/strelka-animatsionnaya-kartinka-0494.gif);
     background-size: 2.3em 70%;
@@ -194,14 +275,19 @@ hr {
     background-position: center left;
     background-color: azure;
 }
+
 /*
     Форматирование таблицы подробных характеристик товара
 */
-.cat_item_table{
+
+.cat_item_table {
     border: 2px;
     border-style: solid;
     border-collapse: collapse;
     border-color: darkgrey;
+}
+.cat_item_table TH {
+    padding: 0.3em;   
 }
 .cat_item_table TD {
     border: 2px;
@@ -210,57 +296,77 @@ hr {
     border-color: darkgrey;
     padding: 0.3em;
 }
-.cat_item_full_descr_table{
-    border-collapse: collapse; 
+
+.cat_item_full_descr_table {
+    border-collapse: collapse;
 }
-.cat_item_full_descr_table p{
+
+.cat_item_full_descr_table p {
     font-size: 16px;
     font-style: italic;
 }
-/*
-Оформления списка каталога
-*/
-.catalog {
-    border-collapse: collapse;
-    text-align: left;
-}
-.catalog TD {
-    border-top-style: solid;
-    border-top-width:thin;
+
+/* Оформления списка каталога */
+.catalog_row {
     border-color: darkgray;
     border-bottom-style: solid;
-    border-bottom-width:thin;
-    padding: 0.5em;
+    border-top-style: solid;
+    border-width: thin;
+    position: relative;
 }
-/*
-    Убираем верхнюю границу первой строки
-*/
-.catalog TR:first-child TD {
+/*Убираем верхнюю границу первой строки*/
+.catalog_row:first-of-type{
     border-top-style: none;
 }
-/*
-    Убираем нижнюю границу последней строки
-*/
-.catalog TR:last-child TD {
+/*Убираем нижнюю границу последней строки*/
+.catalog_row:last-of-type{
     border-bottom-style: none;
 }
-/*
-    Подсветка строки в списке каталога, когжда наведен курсор
-*/
-.catalog TR:hover {
+/* Подсветка строки в списке каталога, когжда наведен курсор */
+.catalog_row:hover {
     background-color: azure;
     color: coral;
 }
-.catalog TR:hover TD:nth-of-type(3):first-letter {
-    color: blue;
+/* Подсветка строки в списке каталога, когжда наведен курсор */
+.catalog_row:active {
+    background-color: aquamarine;
+}
+/* Делаем кликабельную ссылку на всю строку в каталоге*/
+.catalog_row a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: absolute;
+}
+/* форматируем мини изображение товара в строке*/
+.catalog_cell img {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+}
+/* выстраиваем элементы описания товара в строчку*/
+.catalog_cell div {
+    display: inline-block;
+    padding: 10px;
+    vertical-align: middle;
+}
+/* Форматируем ценник в строке каталога*/
+.catalog_price {
+    font-size: 1.3em;
+    font-family: cursive;
 }
 /*
 8.На странице просмотра товара каталога, в каждом параграфе сделать первую букву первого слова другим шрифтом и размером.
 */
-.catalog TD:nth-of-type(3):first-letter {
+.catalog_cell div:nth-of-type(n):first-line  {
     color: coral;
-    font-size: 1.5em;
-    font-weight: 600;
+    font-weight: 400;
+}
+.catalog_row:hover .catalog_cell div:nth-of-type(n):first-line {
+    color: blue;
+    font-weight: 400;
 }
 /*
 4.При вводе текста в поле “Email” на странице контактной информации поменять цвет текста и цвет поля. 
@@ -275,48 +381,74 @@ hr {
 /*
 5.При вводе текста в текстовые поля каждое слово должно начинаться с большой буквы, даже если пользователь будет вводить с маленькой буквы.
 */
-div.field input {
-    text-transform: capitalize; 
+.contact_name input {
+    text-transform: capitalize;
 }
 /*
 7.При наведении на изображения в разделе просмотра товара, подробного описания, необходимо сделать так, чтобы рамка исчезала, но сама картинка при этом не должна смещаться, т.е должна оставаться неподвижной. 
 */
+
 .cat_item_image {
     outline-width: 3px;
     outline-color: coral;
-    outline-style:none;
+    outline-style: none;
 }
+
 .cat_item_image:hover {
     outline-width: 3px;
     outline-color: coral;
-    outline-style:solid;
+    outline-style: solid;
 }
+
 /*
 8.На странице просмотра товара каталога, в каждом параграфе сделать первую букву первого слова другим шрифтом и размером.
 */
+
 .cat_item_full_descr_table TR:nth-child(n+2) TD:nth-child(1):first-letter {
     font-size: 1.1em;
     font-style: italic;
     color: coral;
     font-weight: 600;
 }
+
 /*
     Подсветка строки в таблице подробных характеристик при наведении курсора
 */
+
 .cat_item_full_descr_table TR:nth-of-type(n+3) TD:nth-child(1):hover:first-letter {
     color: Blue;
 }
+
 .cat_item_full_descr_table TR:nth-of-type(n+3):hover {
     background-color: azure;
     color: coral;
 }
+
 /*
 11.*Задать высоту для верхней строки таблицы, отличную от всех остальных.
 */
-.cat_item_table TH{
+
+.cat_item_table TH {
     height: 3em;
     border: 2px;
     border-style: solid;
-    border-collapse: collapse;    
+    border-collapse: collapse;
     border-color: darkgrey;
+}
+
+.cat_item_buy {
+    padding-top: 10px;
+}
+.cat_item_buy input {
+    width: 100%;
+    height: 2em;
+    border-radius: 10px;
+    background-color: mediumaquamarine;
+}
+.cat_item_buy input:hover {
+    background-color: azure;
+    font-weight: 600;
+}
+.cat_item_buy input:active{
+    background-color: aquamarine;
 }
